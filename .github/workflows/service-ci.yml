@@ -138,10 +138,10 @@ jobs:
             -Dsonar.qualitygate.wait=true
 
       - name: Scan filesystem dependencies
-        uses: zzRaphazz/toggle-master-pipeline-actions/.github/actions/trivy-fs@v1.0.1
+        uses: zzRaphazz/toggle-master-pipeline-actions/.github/actions/trivy-fs@v1.0.2
 
       - name: Build and scan image
-        uses: zzRaphazz/toggle-master-pipeline-actions/.github/actions/docker-build-scan@v1.0.1
+        uses: zzRaphazz/toggle-master-pipeline-actions/.github/actions/docker-build-scan@v1.0.2
         with:
           image-ref: ${{ env.LOCAL_IMAGE }}
 
