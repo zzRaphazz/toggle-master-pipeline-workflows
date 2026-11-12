@@ -13,11 +13,13 @@ on:
         type: string
       sonar_organization:
         description: SonarCloud organization.
-        required: true
+        required: false
+        default: ""
         type: string
       sonar_project_key:
         description: SonarCloud project key.
-        required: true
+        required: false
+        default: ""
         type: string
       gitops_repository:
         description: Owner/repository containing the deployment manifests.
