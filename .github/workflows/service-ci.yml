@@ -42,9 +42,6 @@ on:
       GITOPS_TOKEN:
         required: false
 
-permissions:
-  contents: read
-
 jobs:
   ci:
     name: Validate ${{ inputs.service }}
